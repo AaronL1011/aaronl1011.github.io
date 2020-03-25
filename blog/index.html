@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+</head>
+<script>
+ 
+    var bodyElement = document.querySelector("body");
+     
+    var requestAnimationFrame = window.requestAnimationFrame || 
+                                window.mozRequestAnimationFrame || 
+                                window.webkitRequestAnimationFrame || 
+                                window.msRequestAnimationFrame;
+     
+    var delay = 0;
+     
+    function changeColor() {
+        delay++;
+         
+        if (delay > 3) {
+            document.body.style.background = getRandomColor();
+            delay = 0;
+        }
+     
+        requestAnimationFrame(changeColor);
+    }         
+     
+    function getRandomColor() {
+        // creating a random number between 0 and 255
+        var r = Math.floor(Math.random()*256);
+        var g = Math.floor(Math.random()*256);
+        var b = Math.floor(Math.random()*256);
+         
+        // going from decimal to hex
+        var hexR = r.toString(16);
+        var hexG = g.toString(16);
+        var hexB = b.toString(16);
+         
+        // making sure single character values are prepended with a "0"
+        if (hexR.length == 1) {
+            hexR = "0" + hexR;
+        }
+         
+        if (hexG.length == 1) {
+            hexG = "0" + hexG;
+        }
+     
+        if (hexB.length == 1) {
+            hexB = "0" + hexB;
+        }
+     
+        // creating the hex value by concatenatening the string values
+        var hexColor = "#" + hexR + hexG + hexB;
+        return hexColor.toUpperCase();
+    }
+</script>
+
+<body>
+    <div class="sneaky" onclick="changeColor()"></div>
+    <div class="header-content">
+        <h1 class="title">Its a blog, thats about it. &#128076;</h1>
+        <nav>
+            <ul class="links-list">
+                <a href="#"><li>home</li></a>
+                <a href="previous.html"><li>previous</li></a>
+                <a href="contact.html"><li>contact</li></a>
+            </ul>
+        </nav>
+    </div>
+    <div class="blog-content">
+        <h2 class="title">Supercharged Instant Ramen</h2>
+        <h5 class="date">March 25, 2020</h5>
+        <p>Today I have probably the greatest tip for any lazy cook, student, workaholic and general busybody. A surefire way to make an extremely tasty meal, impress a date, nourish a family or just treat yourself!
+            <br><br>How to make a legitimately impressive, full-bodied ramen, using instant noodles:
+        </p>
+        <ul >
+            <li>Buy some of your favourite instant ramen (I used Nongshim Shin Ramyun for some spicy kick)</li>
+            <li>Pick up some meat of your liking, I went with a nice cut of beef</li>
+            <li>Grab some greens (Spinach, snow peas, green onion) and some eggs if you dont have any</li>
+        </ul>
+        <p>Once you've got the ingredients, prep is simple. Start by filling a small/medium sized pot about 1/2 full with water, get it on a hotplate and let it come to a boil while you do the following. Cube your meat and throw it into a HOT frypan, browning it on all sides (try not to murder it and turn it into leather).
+        Once its browned, add in a good splash of soy sauce, teriyaki sauce and some sake (these were my sauce choices which turned out great, use whatever you have in your kitchen). Reduce the heat down to low and let the sauces bubble and soak into the meat. While thats getting all saucy and delicious, 
+        set up your bowls with the dry ramen noodles, and throw in your flavour packets (I left the sad looking vegetable packet out, as we are adding some nice veggies ourselves). Chop up as much green onion as you'd like 
+        (I was only using it as a garnish), chop the ends of your snow peas, and have your spinach at the ready. By this point your water should have come to a boil, throw in as many eggs as you'd like, I did one per person.
+        Let them cook for 5-7 minutes depending on the amount of eggs (7 was good for 3 eggs), use this time to start the kettle boiling enough water to cover your noodles in their bowls! When your minutes are up, pull your eggs out and put them into a bowl of cold water to halt 
+        the cooking (this should give you nice soft centered eggs!). While they are cooling, fill your bowls with the freshly boiled water, let your noodles soften in the flavoured water. Tuck in a handful of spinach under your noodles,
+        throw in your snowpeas, add your meat on one side of your bowl, peel your eggs, slice in half and position nicely in your bowl. Sprinkle on your green onion and serve!! Once practiced this should take about 30 minutes. Not bad for a pretty tasty meal for multiple people!</p>
+    </div>
+</body>
+</html>
