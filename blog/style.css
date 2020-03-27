@@ -66,11 +66,35 @@ a:hover {
 .date {
     color: var(--gray5);
 }
+.blog-image-div {
+    width: 70:
+}
 
 .blog-image {
-    width: 70%;
+    width: 100%;
     display:block;
-    margin:auto;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+.vertical-video-post {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.video-text-div {
+    width: 100%;
+    margin-top: -15px;
+    padding: 0 10px 0px 10px;
+    box-sizing: border-box;
+}
+
+.video-div {
+
 }
 
 .contact-link {
