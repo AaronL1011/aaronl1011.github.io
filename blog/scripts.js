@@ -7,10 +7,12 @@ const body = document.body;
 
 darkButton.onclick = () => {
     body.classList.replace('light', 'dark');
+    return false;
 };
 
 lightButton.onclick = () => {
     body.classList.replace('dark', 'light');
+    return false;
 };
 
 
