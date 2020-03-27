@@ -6,10 +6,12 @@ const body = document.body;
 
 darkButton.onclick = () => {
     body.classList.replace('light', 'dark');
+    return false; // Prevents screen returning to top when theme is changed
 };
 
 lightButton.onclick = () => {
     body.classList.replace('dark', 'light');
+    return false; // Prevents screen returning to top when theme is changed
 };
 
 $(".scrollTo").on('click', function(e) {
