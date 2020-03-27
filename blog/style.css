@@ -20,6 +20,9 @@ body {
 
 .title {
     font-family: 'Merriweather';
+}
+
+.center {
     text-align: center;
 }
 h1{
@@ -40,11 +43,12 @@ h1{
 a {
     color: rgb(112, 112, 112);
     text-decoration: none;
+    transition: 0.3s ease;
 }
 
 a:hover {
     color: rgb(31, 31, 31);
-    transition: 0.3s;
+    transition: 0.3s ease;
 }
 
 .blog-content {
