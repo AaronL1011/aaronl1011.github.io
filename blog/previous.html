@@ -8,16 +8,21 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="img/favicon.png">
+    <script defer src="./scripts.js"></script>
 </head>
-<body>
+<body class="light">
+    <div class="themeDiv">
+        <a href="#" id="light"><div id="lightButton"></div></a>
+        <a href="#" id="dark"><div id="darkButton"></div></a>
+    </div>
     <div class="header-content">
         <h1 class="title">Its a blog, thats about it. &#128076;</h1>
-        <nav>
-            <ul class="links-list">
-                <a href="index.html"><li>home</li></a>
-                <a href="#"><li>previous</li></a>
-                <a href="contact.html"><li>contact</li></a>
-            </ul>
+        <nav class="links-nav">
+            <div class="links-list">
+                <a href="index.html"><div>home</div></a>
+                <a href="#"><div>previous</div></a>
+                <a href="contact.html"><div>contact</div></a>
+            </div>
         </nav>
     </div>
     <div class="blog-content">

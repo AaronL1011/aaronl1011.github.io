@@ -8,22 +8,27 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="img/favicon.png">
+    <script defer src="./scripts.js"></script>
 </head>
-<body>
+<body class="light">
+    <div class="themeDiv">
+        <a href="#" id="light"><div id="lightButton"></div></a>
+        <a href="#" id="dark"><div id="darkButton"></div></a>
+    </div>
     <div class="header-content">
         <h1 class="title">Its a blog, thats about it. &#128076;</h1>
-        <nav>
-            <ul class="links-list">
-                <a href="index.html"><li>home</li></a>
-                <a href="previous.html"><li>previous</li></a>
-                <a href="#"><li>contact</li></a>
-            </ul>
+        <nav class="links-nav">
+            <div class="links-list">
+                <a href="index.html"><div>home</div></a>
+                <a href="previous.html"><div>previous</div></a>
+                <a href="#"><div>contact</div></a>
+            </div>
         </nav>
     </div>
     <div class="blog-content">
         <h2 class="title">How to contact me?</h2>
         <p>You dont. Pretty simple.</p>
-        <p>But if you really want to, you can find my contact details at<a href="https://aaronl1011.github.io/Portfolio">aaronlewis.io</a></p>
+        <p>But if you really want to, you can find my contact details at <a class="contact-link" href="http://aaronlewis.io/Portfolio">https://aaronlewis.io</a></p>
     </div>
 </body>
 </html>
