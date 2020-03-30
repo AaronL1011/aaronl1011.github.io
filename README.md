@@ -73,11 +73,11 @@ I started out by choosing flat black and a nice "off" shade of white. Then let t
 
 ![Color Palette](docs/colorpalette.png)
 
-Initially I went with a somewhat generic style, I wanted to use a nice mountain landscape image as the background for the site, however after a while I fell out of love with the idea and failed to see the significance of a mountain in regards to coding, so I scrapped the whole site and started anew.
+Initially I went with a somewhat generic style. I wanted to use a nice mountain landscape image as the background for the site, however after a while I fell out of love with the idea and failed to see the significance of a mountain in regards to coding, so I scrapped the whole site and started anew.
 
 ![Version 1.0](docs/version01.png)
 
-Iteration numero dos was much closer to the final design, still not quite there. I decided on going ULTRA minimal, as you can see. At the time the thought process behind this one was "I don't really want to be known for my design abilities, more-so rather my problem solving/backend skillset" however as time went on, while the aesthetic was cool and I did get some things right, I reconsidered and decided I was cutting myself short in not putting more effort into the graphical end of things.
+Iteration numero dos was much closer to the final design, although still not quite there. I decided on going ULTRA minimal, as you can see. At the time the thought process behind this one was "I don't really want to be known for my design abilities, more-so rather my problem solving/backend skillset" however as time went on, while the aesthetic was cool and I did get some things right, I reconsidered and decided I was cutting myself short in not putting more effort into the graphical end of things.
 
 ![Version 2.0](docs/version20.png)
 
