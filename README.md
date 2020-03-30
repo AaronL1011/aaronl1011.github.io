@@ -63,6 +63,27 @@ In order to track my progress throughout this project and keep on top of all my 
 ![Project2](docs/Project2.png)
 ![Project3](docs/Project3.png)
 
+As far as design ideas, I made a mood board using Pinterest and gathered inspiration and ideas for the layout of my website. I knew from the start that I was going to keep the design predominantly monochromatic so I looked for as many minimalist, monochrome designs as I could.
+
+![Mood board](docs/moodboard.png)
+
+For the color palette I used a palette generator website called Coolors.co
+
+I started out by choosing flat black and a nice "off" shade of white. Then let the color generator cycle through some nice complimentary colors until I landed on a scheme that satisfied and from which I expanded on.
+
+![Color Palette](docs/colorpalette.png)
+
+Initially I went with a somewhat generic style, I wanted to use a nice mountain landscape image as the background for the site, however after a while I fell out of love with the idea and failed to see the significance of a mountain in regards to coding, so I scrapped the whole site and started anew.
+
+![Version 1.0](docs/version01.png)
+
+Iteration numero dos was much closer to the final design, still not quite there. I decided on going ULTRA minimal, as you can see. At the time the thought process behind this one was "I don't really want to be known for my design abilities, more-so rather my problem solving/backend skillset" however as time went on, while the aesthetic was cool and I did get some things right, I reconsidered and decided I was cutting myself short in not putting more effort into the graphical end of things.
+
+![Version 2.0](docs/version20.png)
+
+Finally, I landed on this designed. It took a bit of trial and error finding the right background image, but overall I am really happy with the final feel of this layout. With the addition of a background with theme-adjustable shading, and an improved navbar, it was just enough UI improvements to show I'm not useless in the designing side of web development, and plenty of backend to prove I've got good abilities there aswell.
+
+![Version 3.0](docs/version21.png)
 
 ## Tech Stack
 
