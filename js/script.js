@@ -30,4 +30,11 @@ $(".scrollTo").on('click', function(e) {
     }
 });
 
-// window.addEventListener("wheel", function(e){e.preventDefault();}, {passive: false} );
+function openNav() {
+    document.getElementById("mySidenav").style.width = "80px";
+}
+  
+  /* Set the width of the side navigation to 0 */
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}

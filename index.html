@@ -16,7 +16,17 @@
         <a href="#" id="dark"><div id="darkButton"></div></a>
         <a href="#" id="light"><div id="lightButton"></div></a>
     </div>
-    <div class="returnImg" id="top"><a href="#homeDiv" class="scrollTo"><img src="./img/exit.png" alt="return"></a></div>
+    <div class="sidenav-button" id="top"><a onclick="openNav()"><img src="./img/burger.png" alt="return"></a></div>
+    <div id="mySidenav" class="sidenav">
+        <div class="sidenav-links">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#homeDiv" class="scrollTo" onclick="closeNav()"><img class="sidenav-img" src="./img/home.png" alt="home" draggable="false" /></a>
+            <a href="https://www.github.com/AaronL1011" onclick="closeNav()"><img class="sidenav-img" src="./img/github.png" alt="github" draggable="false" /></a>
+            <a href="#projectDiv" class="scrollTo" onclick="closeNav()"><img class="sidenav-img" src="./img/projects.png" alt="projects" draggable="false" /></a>
+            <a href="http://aaronlewis.io/blog" onclick="closeNav()"><img class="sidenav-img" src="./img/blog.png" alt="blog" draggable="false" /></a>
+            <a href="#contactDiv" class="scrollTo" onclick="closeNav()"><img class="sidenav-img" src="./img/contact.png" alt="contact" draggable="false" /></a>
+        </div>
+      </div>
     <div class="home" id="homeDiv">
         <div class="title-div">
             <h1 class="title noselect">aaron lewis.</h1>
