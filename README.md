@@ -59,9 +59,9 @@ The target audiences of this project are any potential employers and industry pr
 
 In order to track my progress throughout this project and keep on top of all my goals, I utilized Github Projects and created boards for TODO, In Progress and Completed tasks.
 
-![Project1](docs/project1.png)
-![Project2](docs/project2.png)
-![Project3](docs/project3.png)
+![Project1](docs/Project1.png)
+![Project2](docs/Project2.png)
+![Project3](docs/Project3.png)
 
 
 ## Tech Stack
