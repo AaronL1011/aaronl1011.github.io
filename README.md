@@ -41,6 +41,8 @@ I'd also like the bulk of the website to be on one html document. A home screen,
 
 When positioning the Navigation menu, I want to be sure to place it in a region of the screen so mobile users with large devices won't struggle to reach the buttons (which is a pressing issue in this age of large smartphones and small hands).
 
+I decided to position the navigation menu to the right side of the screen (sorry lefties) to make it easier to reach all the icons in the menu without straining too much.
+
 ![Navigation Menu](docs/navmenu.png)
 
 ## Sitemap
