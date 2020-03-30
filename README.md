@@ -53,6 +53,13 @@ The home page, projects and contacts will all be located on the same HTML docume
 
 The target audiences of this project are any potential employers and industry professionals. This is going to be used to display my skills and history to companies that I am applying for jobs with, so I am not overly concerned about the average user not understanding tech jargon or inside-jokes. As long as a recruiter or other developer can appreciate my portfolio website, that will be a win in my books.
 
+## Project Development
+
+In order to track my progress throughout this project and keep on top of all my goals, I utilized Github Projects and created boards for TODO, In Progress and Completed tasks.
+
+![Project1](docs/project1.png)
+![Project2](docs/project2.png)
+![Project3](docs/project3.png)
 
 
 ## Tech Stack
