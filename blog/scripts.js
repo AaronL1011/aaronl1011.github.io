@@ -6,11 +6,11 @@ const body = document.body;
 // Button Event Handlers
 
 function setTheme() {
-    var theme = window.localStorage.blogTheme;
+    var currentTheme = window.localStorage.blogTheme;
 
-    if (theme == "light") {
+    if (currentTheme == "light") {
         body.classList.replace('dark', 'light');
-    } else if (localStorage.blogTheme == "dark") {
+    } else if (currentTheme == "dark") {
         body.classList.replace('light', 'dark');
     } else {
         return false;

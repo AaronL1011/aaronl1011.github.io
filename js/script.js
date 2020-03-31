@@ -1,19 +1,20 @@
 function setTheme() {
-    var theme = window.localStorage.portfolioTheme;
+    var currentTheme = window.localStorage.portfolioTheme;
 
-    if (theme == "light") {
+    if (currentTheme == "light") {
         body.classList.replace('dark', 'light');
-    } else if (localStorage.portfolioTheme == "dark") {
+    } else if (currentTheme == "dark") {
         body.classList.replace('light', 'dark');
-    } else {};;
+    } else {
+        return false;
+    };;
 };
+
+window.onload = setTheme();
 
 const darkButton = document.getElementById('dark');
 const lightButton = document.getElementById('light');
 const body = document.body;
-
-window.onload = setTheme();
-
 // Button Event Handlers
 
 darkButton.onclick = () => {
