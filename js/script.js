@@ -1,15 +1,29 @@
+function setTheme() {
+    var theme = window.localStorage.portfolioTheme;
+
+    if (theme == "light") {
+        body.classList.replace('dark', 'light');
+    } else if (localStorage.portfolioTheme == "dark") {
+        body.classList.replace('light', 'dark');
+    } else {};;
+};
+
 const darkButton = document.getElementById('dark');
 const lightButton = document.getElementById('light');
 const body = document.body;
 
+window.onload = setTheme();
+
 // Button Event Handlers
 
 darkButton.onclick = () => {
+    localStorage.portfolioTheme = "dark";
     body.classList.replace('light', 'dark');
     return false; // Prevents screen returning to top when theme is changed
 };
 
 lightButton.onclick = () => {
+    localStorage.portfolioTheme = "light";
     body.classList.replace('dark', 'light');
     return false; // Prevents screen returning to top when theme is changed
 };
@@ -38,3 +52,4 @@ function openNav() {
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
+

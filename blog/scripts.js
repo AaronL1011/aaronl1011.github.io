@@ -5,16 +5,32 @@ const body = document.body;
 
 // Button Event Handlers
 
+function setTheme() {
+    var theme = window.localStorage.blogTheme;
+
+    if (theme == "light") {
+        body.classList.replace('dark', 'light');
+    } else if (localStorage.blogTheme == "dark") {
+        body.classList.replace('light', 'dark');
+    } else {
+        return false;
+    };;
+};
+
+
 darkButton.onclick = () => {
+    localStorage.blogTheme = "dark";
     body.classList.replace('light', 'dark');
     return false;
 };
 
 lightButton.onclick = () => {
+    localStorage.blogTheme = "light";
     body.classList.replace('dark', 'light');
     return false;
 };
 
+window.onload = setTheme();
 
 var bodyElement = document.querySelector("body");
     
