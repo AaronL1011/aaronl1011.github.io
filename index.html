@@ -12,9 +12,9 @@
     <title>Aaron Lewis</title>
 </head>
 <body class="dark">
-    <div class="themeDiv">
-        <a href="#" id="dark"><div id="darkButton"></div></a>
-        <a href="#" id="light"><div id="lightButton"></div></a>
+    <div class="theme-div">
+        <a href="#" id="dark"><div id="dark-button"></div></a>
+        <a href="#" id="light"><div id="light-button"></div></a>
     </div>
     <div class="sidenav-button" id="top"><a onclick="openNav()"><img src="./img/burger.png" alt="return"></a></div>
     <div id="mySidenav" class="sidenav">
@@ -27,7 +27,7 @@
             <a href="#contactDiv" class="scrollTo" onclick="closeNav()"><img class="sidenav-img" src="./img/contact.png" alt="contact section link" draggable="false" /></a>
         </div>
       </div>
-    <div class="home" id="homeDiv">
+    <header class="home" id="homeDiv">
         <div class="title-div">
             <h1 class="title noselect">aaron lewis.</h1>
         </div>
@@ -62,49 +62,51 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="projects" id="projectDiv">
-        <div class="projects-title-div">
-            <h1 class="title noselect">projects</h1>
-        </div>
-        <div class="project-content">
-            <div class="project-card">
-                <img src="./img/d20screenshot.png" alt="D20 Screenshot" />
-                <h3>Virtual D20</h3>
-                <p>A Python3 terminal based dice roll application made for the popular tabletop game, Dungeons and Dragons!</p>
-                <h4><a href="https://github.com/AaronL1011/TheVirtualD20" target="_blank">Source Code</a></h4>
+    </header>
+    <main>
+        <section class="projects" id="projectDiv">
+            <div class="projects-title-div">
+                <h1 class="title noselect">projects</h1>
             </div>
-            <div class="project-card">
-                <img src="./img/hangmanscreenshot.png" alt="Hangman screenshot" />
-                <h3>Hangman</h3>
-                <p>A pure Ruby terminal based version of Hangman. Created over the course of 3 days for a project at Coder Academy. Fun for all ages!</p>
-                <h4><a href="https://github.com/AaronL1011/HangmanRUBYPORT" target="_blank">Source Code</a></h4>
+            <div class="project-content">
+                <div class="project-card">
+                    <img src="./img/d20screenshot.png" alt="D20 Screenshot" />
+                    <h3>Virtual D20</h3>
+                    <p>A Python3 terminal based dice roll application made for the popular tabletop game, Dungeons and Dragons!</p>
+                    <h4><a href="https://github.com/AaronL1011/TheVirtualD20" target="_blank">Source Code</a></h4>
+                </div>
+                <div class="project-card">
+                    <img src="./img/hangmanscreenshot.png" alt="Hangman screenshot" />
+                    <h3>Hangman</h3>
+                    <p>A pure Ruby terminal based version of Hangman. Created over the course of 3 days for a project at Coder Academy. Fun for all ages!</p>
+                    <h4><a href="https://github.com/AaronL1011/HangmanRUBYPORT" target="_blank">Source Code</a></h4>
+                </div>
+                <div class="project-card">
+                    <img src="./img/anagrammrScreenshot.png" alt="anagrammer Screenshot" />
+                    <h3>Anagrammr</h3>
+                    <p>A Python3 terminal application created to reference the english dictionary and find all possibile anagrams of a specified word.</p>
+                    <h4><a href="https://github.com/AaronL1011/Anagrammr" target="_blank">Source Code</a></h4>
+                </div>
             </div>
-            <div class="project-card">
-                <img src="./img/anagrammrScreenshot.png" alt="anagrammer Screenshot" />
-                <h3>Anagrammr</h3>
-                <p>A Python3 terminal application created to reference the english dictionary and find all possibile anagrams of a specified word.</p>
-                <h4><a href="https://github.com/AaronL1011/Anagrammr" target="_blank">Source Code</a></h4>
+        </section>
+        <section class="contact" id="contactDiv">
+            <div class="contact-title-div">
+                <h1 class="title noselect">contact</h1>
             </div>
-        </div>
-    </div>
-    <div class="contact" id="contactDiv">
-        <div class="contact-title-div">
-            <h1 class="title noselect">contact</h1>
-        </div>
-        <div class = "contact-details">
-            <ul>
-                <li class="contact-heading">Resume:</li>
-                <li><a href="docs/Aaron-lewis-web-resume.pdf" target="_blank">.PDF</a></li>
-                <li class="contact-heading">Twitter:</li>
-                <li><a href="https://twitter.com/aar0n_lew1s" target="_blank">@aar0n_lew1s</a></li>
-                <li class="contact-heading">Email:</li>
-                <li><a href="mailto:aaron.lewis1011@gmail.com">aaron.lewis1011@gmail.com</a></li>
-                <li class="contact-heading">LinkedIn:</li>
-                <li><a href="https://www.linkedin.com/in/aaron-lewis-27a19b160" target="_blank">Aaron Lewis</a></li>
-            </ul>
-        </div>
-    </div>
+            <div class = "contact-details">
+                <ul>
+                    <li class="contact-heading">Resume:</li>
+                    <li><a href="docs/Aaron-lewis-web-resume.pdf" target="_blank">.PDF</a></li>
+                    <li class="contact-heading">Twitter:</li>
+                    <li><a href="https://twitter.com/aar0n_lew1s" target="_blank">@aar0n_lew1s</a></li>
+                    <li class="contact-heading">Email:</li>
+                    <li><a href="mailto:aaron.lewis1011@gmail.com">aaron.lewis1011@gmail.com</a></li>
+                    <li class="contact-heading">LinkedIn:</li>
+                    <li><a href="https://www.linkedin.com/in/aaron-lewis-27a19b160" target="_blank">Aaron Lewis</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
 </body>
 <!-- <footer class="footer">&copy; Aaron Lewis 2020</footer> -->
 </html>
