@@ -70,9 +70,30 @@ In order to track my progress throughout this project and keep on top of all my 
 ![Project2](docs/Project2.png)
 ![Project3](docs/Project3.png)
 
+### Mood Board
+
 As far as design ideas, I made a mood board using Pinterest and gathered inspiration and ideas for the layout of my website. I knew from the start that I was going to keep the design predominantly monochromatic so I looked for as many minimalist, monochrome designs as I could.
 
 ![Mood board](docs/moodboard.png)
+
+### Wireframes 
+
+In order to visualize the layout I wanted for my portfolio and blog, I used Balsamiq Wireframes and mocked up some very basic designs for both desktop and mobile. This was the basic guide I stuck to after failing the first iteration of website design. It was much easier after making the wireframes and using them as reference for the next versions. 
+
+**Portfolio Page**
+![Portfolio wireframe](docs/HomepageWireframe.png)
+
+**Blog Home Page**
+![Blog Wireframe](docs/BlogWireframe.png)
+
+**Previous Blog Posts**
+![Blog Wireframe](docs/PreviousWireframe.png)
+
+**Blog Contact Info**
+![Blog Wireframe](docs/ContactWireframe.png)
+
+
+### Color Choices
 
 For the color palette I used a palette generator website called Coolors.co
 
