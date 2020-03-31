@@ -17,6 +17,7 @@ function setTheme() {
     };;
 };
 
+window.onload = setTheme();
 
 darkButton.onclick = () => {
     localStorage.blogTheme = "dark";
@@ -29,8 +30,6 @@ lightButton.onclick = () => {
     body.classList.replace('dark', 'light');
     return false;
 };
-
-window.onload = setTheme();
 
 var bodyElement = document.querySelector("body");
     
