@@ -22,28 +22,21 @@ html, body {
 }
 
 body {
-    /* background: rgb(247, 247, 247); */
-    background: var(--bg);
+    background: rgb(200, 200, 200);
     font-family: sans-serif;
     margin: 0px;
     color: var(--text);
-    transition: background 0.5s, color 1s ease-in-out, filter 1s ease-in-out;
+    transition: color 1s ease-in-out, filter 1s ease-in-out;
 }
 
 
 .home {
-    background-repeat: no-repeat;
-    background: url(../img/background2.jpg);
-    background-size: cover;
-    background-position: center;
-    box-shadow: inset 0 0 0 2000px var(--home-shadow);
     width: 100%;
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    transition: box-shadow 1s ease;
 }
 
 .title-div {
@@ -52,18 +45,22 @@ body {
 }
 
 .title {
-    font-family: 'Merriweather', serif;
+    font-family: 'Spicy Rice', cursive;
     font-size: 60px;
-    transition: transform 0.5s, text-shadow 0.5s;
+    transition: transform 20s, text-shadow 0.5s;
 }
 .title:hover {
-    transform: translateY(-5px) scaleX(1.05) scaleY(1.05);
+    transform: rotate(20000deg);
     text-shadow: 0 5px 10px var(--title-shadow);
-    transition: transform 0.5s, text-shadow 0.5s;
+    transition: transform 20s, text-shadow 0.5s;
+}
+
+.title:hover ~ .links .link-img {
+    transform: rotate(10000deg);
 }
 
 .links {
-    transform: translateY(-20px);
+    transform: translateY(50px);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -71,25 +68,18 @@ body {
     transition: 0.4s ease;
 }
 
-.links:hover .link-img:not(:hover){
-    opacity: 0.4;
-    transition: 0.4s ease;
-}
 
 .link-img {
     height: 50px;
-    transition: 0.4s;
+    transition: 5s;
 }
 
 .link-img:hover {
-    transition: 0.4s;
-    transform: translateY(10px);
+    transition: 0.5s;
+    transform: rotate(10000deg);
 }
 
 .projects {
-    -webkit-box-shadow: 0px -7px 5px 1px rgba(0,0,0,0.5);
-    -moz-box-shadow: 0px -7px 5px 1px rgba(0,0,0,0.5);
-    box-shadow: 0px -7px 5px 1px rgba(0,0,0,0.5);
     width: 100%;
     min-height: 100vh;
     display: flex;
