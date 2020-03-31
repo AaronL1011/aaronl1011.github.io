@@ -1,3 +1,9 @@
+
+
+const darkButton = document.getElementById('dark');
+const lightButton = document.getElementById('light');
+const body = document.body;
+
 function setTheme() {
     var currentTheme = window.localStorage.portfolioTheme;
 
@@ -11,10 +17,6 @@ function setTheme() {
 };
 
 window.onload = setTheme();
-
-const darkButton = document.getElementById('dark');
-const lightButton = document.getElementById('light');
-const body = document.body;
 // Button Event Handlers
 
 darkButton.onclick = () => {
