@@ -413,7 +413,7 @@ body {
 /* Position and style the close button (top right corner) */
 .sidenav .closebtn {
     position: absolute;
-    top: 15px;
+    top: 10px;
     font-size: 36px;
 }
 
