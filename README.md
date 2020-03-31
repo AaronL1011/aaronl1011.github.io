@@ -13,6 +13,13 @@ Coder Academy 2019
 
 [http://aaronlewis.io](http://aaronlewis.io)
 
+See branches for alternate versions of the website.
+
+**!!!WARNING!!!**
+
+**Do not look at Anarchy website if you have a history of epilepsy or seizures, rapid flashing colors appear on this website!!!!**
+
+
 ## Purpose
 
 The goal of this project is to create a visually and technically appealing website to demonstrate my abilities and coding experience.
