@@ -6,6 +6,7 @@
     <link rel="icon" type="image/png" href="img/favicon.png">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Merriweather:300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script defer src="js/script.js"></script>
@@ -21,7 +22,7 @@
         <div class="sidenav-links">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="#homeDiv" class="scrollTo" onclick="closeNav()"><img class="sidenav-img" src="./img/home.png" alt="return home" draggable="false" /></a>
-            <a href="https://www.github.com/AaronL1011" target="_blank" onclick="closeNav()"><img class="sidenav-img" src="./img/github.png" alt="github link" draggable="false" /></a>
+            <a href="#aboutDiv" class="scrollTo" onclick="closeNav()"><img class="sidenav-img" src="./img/about.png" alt="about section link" draggable="false" /></a>
             <a href="#projectDiv" class="scrollTo" onclick="closeNav()"><img class="sidenav-img" src="./img/projects.png" alt="projects section link" draggable="false" /></a>
             <a href="http://aaronlewis.io/blog" target="_blank" onclick="closeNav()"><img class="sidenav-img" src="./img/blog.png" alt="blog link" draggable="false" /></a>
             <a href="#contactDiv" class="scrollTo" onclick="closeNav()"><img class="sidenav-img" src="./img/contact.png" alt="contact section link" draggable="false" /></a>
@@ -29,7 +30,7 @@
       </div>
     <header class="home" id="homeDiv">
         <div class="title-div">
-            <h1 class="title noselect">aaron lewis.</h1>
+            <a href="#aboutDiv" class="scrollTo"><h1 class="title noselect" onclick="aboutMe()">aaron lewis.</h1></a>
         </div>
         <div class = "links">
             <div class="tooltip">
@@ -64,8 +65,48 @@
         </div>
     </header>
     <main>
+        <section class="about" id="aboutDiv">
+            <div>
+                <h1 class="title noselect">about</h1>
+            </div>
+            <div class="about-descriptor">
+                <h2>Muso | Foodie | Gamer | Coder</h2>
+            </div>
+            <div class="about-content">
+                <section class="about-section">
+                    <h3>Technical Skills</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>Ruby</li>
+                        <li>C++</li>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>Javascript</li>
+                        <li>React</li>
+                        <li>Express</li>
+                        <li>Node JS</li>
+                        <li>MongoDB</li>
+                        <li>Wireframing</li>
+                        <li>Testing</li>
+                    </ul>
+                </section>
+                <section class="about-section">
+                    <h3>Hobbies and Interests</h3>
+                    <ul>
+                        <li>Collecting Vinyls</li>
+                        <li>Playing Drums</li>
+                        <li>Cooking</li>
+                        <li>Fixing Cars</li>
+                        <li>Coding</li>
+                        <li>Motorcycles</li>
+                        <li>Video Games</li>
+                        <li>Looking at cats on Reddit</li>
+                    </ul>
+                </section>
+            </div>
+        </section>
         <section class="projects" id="projectDiv">
-            <div class="projects-title-div">
+            <div>
                 <h1 class="title noselect">projects</h1>
             </div>
             <div class="project-content">
