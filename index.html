@@ -1,154 +1,285 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="img/favicon.png">
-    <link rel="stylesheet" type="text/css" href="css/styles.css" integrity="cSDOHWCD20rcALLQgObM7voZDP4GEkhWpvHA/E/wxhVtb82GufdozJcsBaWgO7LI7sNO8evdbjiUejsjsEfKHg==">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:300&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" integrity="sha384-npxfGiG5C/F5X72RqcKFYSfzr1AXsDiu1YC/ydsOrS+jL554Jh4zFAx9GpQi4lXQ" crossorigin="anonymous"></script>
-    <script defer src="js/script.js" integrity="sha512-mAyXAQAkNN9dIQiqeuT/vTOp5FG9csFAfUXftTnr0/nICQjg9Zpqbi91ysOeJvZhmQ0PfLYgCKpTRQV8vyhGhg=="></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/styles.css"
+      integrity="cSDOHWCD20rcALLQgObM7voZDP4GEkhWpvHA/E/wxhVtb82GufdozJcsBaWgO7LI7sNO8evdbjiUejsjsEfKHg=="
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Merriweather:300&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+    />
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"
+      integrity="sha384-npxfGiG5C/F5X72RqcKFYSfzr1AXsDiu1YC/ydsOrS+jL554Jh4zFAx9GpQi4lXQ"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="js/script.js"
+      integrity="sha512-mAyXAQAkNN9dIQiqeuT/vTOp5FG9csFAfUXftTnr0/nICQjg9Zpqbi91ysOeJvZhmQ0PfLYgCKpTRQV8vyhGhg=="
+    ></script>
     <title>Aaron Lewis</title>
-</head>
-<body class="dark">
+  </head>
+  <body class="dark">
     <div class="theme-div">
-        <a href="#" id="dark"><div id="dark-button"></div></a>
-        <a href="#" id="light"><div id="light-button"></div></a>
+      <a href="#" id="dark"><div id="dark-button"></div></a>
+      <a href="#" id="light"><div id="light-button"></div></a>
     </div>
-    <div class="sidenav-button" id="top"><a onclick="openNav()"><img src="./img/burger.png" alt="return"></a></div>
+    <div class="sidenav-button" id="top">
+      <a onclick="openNav()"><img src="./img/burger.png" alt="return" /></a>
+    </div>
     <div id="mySidenav" class="sidenav">
-        <div class="sidenav-links">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#homeDiv" class="scrollTo" onclick="closeNav()"><img class="sidenav-img" src="./img/home.png" alt="return home" draggable="false" /></a>
-            <a href="#aboutDiv" class="scrollTo" onclick="closeNav()"><img class="sidenav-img" src="./img/about.png" alt="about section link" draggable="false" /></a>
-            <a href="#projectDiv" class="scrollTo" onclick="closeNav()"><img class="sidenav-img" src="./img/projects.png" alt="projects section link" draggable="false" /></a>
-            <a href="http://aaronlewis.io/blog" target="_blank" onclick="closeNav()"><img class="sidenav-img" src="./img/blog.png" alt="blog link" draggable="false" /></a>
-            <a href="#contactDiv" class="scrollTo" onclick="closeNav()"><img class="sidenav-img" src="./img/contact.png" alt="contact section link" draggable="false" /></a>
+      <div class="sidenav-links">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <a href="#homeDiv" class="scrollTo" onclick="closeNav()"
+          ><img
+            class="sidenav-img"
+            src="./img/home.png"
+            alt="return home"
+            draggable="false"
+        /></a>
+        <a href="#aboutDiv" class="scrollTo" onclick="closeNav()"
+          ><img
+            class="sidenav-img"
+            src="./img/about.png"
+            alt="about section link"
+            draggable="false"
+        /></a>
+        <a href="#projectDiv" class="scrollTo" onclick="closeNav()"
+          ><img
+            class="sidenav-img"
+            src="./img/projects.png"
+            alt="projects section link"
+            draggable="false"
+        /></a>
+        <a href="http://aaronlewis.io/blog" target="_blank" onclick="closeNav()"
+          ><img
+            class="sidenav-img"
+            src="./img/blog.png"
+            alt="blog link"
+            draggable="false"
+        /></a>
+        <a href="#contactDiv" class="scrollTo" onclick="closeNav()"
+          ><img
+            class="sidenav-img"
+            src="./img/contact.png"
+            alt="contact section link"
+            draggable="false"
+        /></a>
+      </div>
+    </div>
+    <header class="home" id="homeDiv">
+      <div class="title-div">
+        <a href="#aboutDiv" class="scrollTo"
+          ><h1 class="title noselect" onclick="aboutMe()">aaron lewis.</h1></a
+        >
+      </div>
+      <div class="links">
+        <div class="tooltip">
+          <a href="https://github.com/aaronl1011" target="_blank"
+            ><img
+              class="link-img tooltip"
+              src="./img/github.png"
+              alt="github link"
+              draggable="false"
+          /></a>
+          <div class="bottom">
+            <h3>Github</h3>
+            <i></i>
+          </div>
+        </div>
+
+        <div class="tooltip">
+          <a href="#projectDiv" class="scrollTo tooltip"
+            ><img
+              class="link-img"
+              src="./img/projects.png"
+              alt="projects section link"
+              draggable="false"
+          /></a>
+          <div class="bottom">
+            <h3>Projects</h3>
+            <i></i>
+          </div>
+        </div>
+        <div class="tooltip">
+          <a
+            href="https://aaronl1011.github.io/blog"
+            target="_blank"
+            class="tooltip"
+            ><img
+              class="link-img"
+              src="./img/blog.png"
+              alt="blog link"
+              draggable="false"
+          /></a>
+          <div class="bottom">
+            <h3>Blog</h3>
+            <i></i>
+          </div>
+        </div>
+        <div class="tooltip">
+          <a href="#contactDiv" class="scrollTo tooltip"
+            ><img
+              class="link-img"
+              src="./img/contact.png"
+              alt="contact section link"
+              draggable="false"
+          /></a>
+          <div class="bottom">
+            <h3>Contact</h3>
+            <i></i>
+          </div>
         </div>
       </div>
-    <header class="home" id="homeDiv">
-        <div class="title-div">
-            <a href="#aboutDiv" class="scrollTo"><h1 class="title noselect" onclick="aboutMe()">aaron lewis.</h1></a>
-        </div>
-        <div class = "links">
-            <div class="tooltip">
-                <a href="https://github.com/aaronl1011" target="_blank"><img class="link-img tooltip" src="./img/github.png" alt="github link" draggable="false" /></a>
-                <div class="bottom">
-                    <h3>Github</h3>
-                    <i></i>
-                </div>
-            </div>
-            
-            <div class="tooltip">
-                <a href="#projectDiv" class="scrollTo tooltip"><img class="link-img" src="./img/projects.png" alt="projects section link" draggable="false" /></a>
-                <div class="bottom">
-                    <h3>Projects</h3>
-                    <i></i>
-                </div>
-            </div>
-            <div class="tooltip">
-                <a href="https://aaronl1011.github.io/blog" target="_blank" class="tooltip"><img class="link-img" src="./img/blog.png" alt="blog link" draggable="false" /></a>
-                <div class="bottom">
-                    <h3>Blog</h3>
-                    <i></i>
-                </div>
-            </div>
-            <div class="tooltip">
-                <a href="#contactDiv" class="scrollTo tooltip"><img class="link-img" src="./img/contact.png" alt="contact section link" draggable="false" /></a>
-                <div class="bottom">
-                    <h3>Contact</h3>
-                    <i></i>
-                </div>
-            </div>
-        </div>
     </header>
     <main>
-        <section class="about" id="aboutDiv">
-            <div>
-                <h1 class="title noselect">about</h1>
-            </div>
-            <div class="about-descriptor">
-                <h2>Muso | Foodie | Gamer | Coder</h2>
-            </div>
-            <div class="about-content">
-                <section class="about-section">
-                    <h3>Technical Skills</h3>
-                    <ul>
-                        <li>Python</li>
-                        <li>Ruby</li>
-                        <li>C++</li>
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>Javascript</li>
-                        <li>React</li>
-                        <li>Express</li>
-                        <li>Node JS</li>
-                        <li>MongoDB</li>
-                        <li>Wireframing</li>
-                        <li>Testing</li>
-                    </ul>
-                </section>
-                <section class="about-section">
-                    <h3>Hobbies and Interests</h3>
-                    <ul>
-                        <li>Collecting Vinyls</li>
-                        <li>Playing Drums</li>
-                        <li>Cooking</li>
-                        <li>Fixing Cars</li>
-                        <li>Coding</li>
-                        <li>Space / Stargazing</li>
-                        <li>Motorcycles</li>
-                        <li>Video Games</li>
-                        <li>Looking at cats on Reddit</li>
-                    </ul>
-                </section>
-            </div>
-        </section>
-        <section class="projects" id="projectDiv">
-            <div>
-                <h1 class="title noselect">projects</h1>
-            </div>
-            <div class="project-content">
-                <div class="project-card">
-                    <img src="./img/d20screenshot.png" alt="D20 Screenshot" />
-                    <h3>Virtual D20</h3>
-                    <p>A Python3 terminal based dice roll application made for the popular tabletop game, Dungeons and Dragons!</p>
-                    <h4><a href="https://github.com/AaronL1011/TheVirtualD20" target="_blank">Source Code</a></h4>
-                </div>
-                <div class="project-card">
-                    <img src="./img/hangmanscreenshot.png" alt="Hangman screenshot" />
-                    <h3>Hangman</h3>
-                    <p>A pure Ruby terminal based version of Hangman. Created over the course of 3 days for a project at Coder Academy. Fun for all ages!</p>
-                    <h4><a href="https://github.com/AaronL1011/HangmanRUBYPORT" target="_blank">Source Code</a></h4>
-                </div>
-                <div class="project-card">
-                    <img src="./img/anagrammrScreenshot.png" alt="anagrammer Screenshot" />
-                    <h3>Anagrammr</h3>
-                    <p>A Python3 terminal application created to reference the english dictionary and find all possibile anagrams of a specified word.</p>
-                    <h4><a href="https://github.com/AaronL1011/Anagrammr" target="_blank">Source Code</a></h4>
-                </div>
-            </div>
-        </section>
-        <section class="contact" id="contactDiv">
-            <div class="contact-title-div">
-                <h1 class="title noselect">contact</h1>
-            </div>
-            <div class="contact-details">
-                <ul>
-                    <li class="contact-heading">Resume:</li>
-                    <li><a href="docs/Aaron-lewis-web-resume.pdf" target="_blank">.PDF</a></li>
-                    <li class="contact-heading">Twitter:</li>
-                    <li><a href="https://twitter.com/aar0n_lew1s" target="_blank">@aar0n_lew1s</a></li>
-                    <li class="contact-heading">Email:</li>
-                    <li><a href="mailto:aaron.lewis1011@gmail.com">aaron.lewis1011@gmail.com</a></li>
-                    <li class="contact-heading">LinkedIn:</li>
-                    <li><a href="https://www.linkedin.com/in/aaron-lewis-27a19b160" target="_blank">Aaron Lewis</a></li>
-                </ul>
-            </div>
-        </section>
+      <section class="about" id="aboutDiv">
+        <div>
+          <h1 class="title noselect">about</h1>
+        </div>
+        <div class="about-descriptor">
+          <h2>Muso | Foodie | Gamer | Coder</h2>
+        </div>
+        <div class="about-content">
+          <section class="about-section">
+            <h3>Technical Skills</h3>
+            <ul>
+              <li>Python</li>
+              <li>Ruby</li>
+              <li>C++</li>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>Javascript</li>
+              <li>React</li>
+              <li>Express</li>
+              <li>Node JS</li>
+              <li>MongoDB</li>
+              <li>Wireframing</li>
+              <li>Testing</li>
+            </ul>
+          </section>
+          <section class="about-section">
+            <h3>Hobbies and Interests</h3>
+            <ul>
+              <li>Collecting Vinyls</li>
+              <li>Playing Drums</li>
+              <li>Cooking</li>
+              <li>Fixing Cars</li>
+              <li>Coding</li>
+              <li>Space / Stargazing</li>
+              <li>Motorcycles</li>
+              <li>Video Games</li>
+              <li>Looking at cats on Reddit</li>
+            </ul>
+          </section>
+        </div>
+      </section>
+      <section class="projects" id="projectDiv">
+        <div>
+          <h1 class="title noselect">projects</h1>
+        </div>
+        <div class="project-content">
+          <div class="project-card">
+            <img src="./img/d20screenshot.png" alt="D20 Screenshot" />
+            <h3>Virtual D20</h3>
+            <p>
+              A Python3 terminal based dice roll application made for the
+              popular tabletop game, Dungeons and Dragons!
+            </p>
+            <h4>
+              <a
+                href="https://github.com/AaronL1011/TheVirtualD20"
+                target="_blank"
+                >Source Code</a
+              >
+            </h4>
+          </div>
+          <div class="project-card">
+            <img src="./img/hangmanscreenshot.png" alt="Hangman screenshot" />
+            <h3>Hangman</h3>
+            <p>
+              A pure Ruby terminal based version of Hangman. Created over the
+              course of 3 days for a project at Coder Academy. Fun for all ages!
+            </p>
+            <h4>
+              <a
+                href="https://github.com/AaronL1011/HangmanRUBYPORT"
+                target="_blank"
+                >Source Code</a
+              >
+            </h4>
+          </div>
+          <div class="project-card">
+            <img src="./img/lady_fern.png" alt="anagrammer Screenshot" />
+            <h3 style="color: black;">E-Commerce Rails App</h3>
+            <p style="color: black;">
+              A commission for a local floristy business. Created with Ruby on
+              Rails, this application was designed to handle listings, user
+              accounts and transactions in order to boost the sales of a growing
+              independent business.
+            </p>
+            <h4>
+              <a
+                href="https://github.com/AaronL1011/The_Lady_Fern"
+                target="_blank"
+              >
+                Source Code
+              </a>
+            </h4>
+          </div>
+        </div>
+      </section>
+      <section class="contact" id="contactDiv">
+        <div class="contact-title-div">
+          <h1 class="title noselect">contact</h1>
+        </div>
+        <div class="contact-details">
+          <ul>
+            <li class="contact-heading">Resume:</li>
+            <li>
+              <a href="docs/Aaron-lewis-web-resume.pdf" target="_blank">.PDF</a>
+            </li>
+            <li class="contact-heading">Twitter:</li>
+            <li>
+              <a href="https://twitter.com/aar0n_lew1s" target="_blank"
+                >@aar0n_lew1s</a
+              >
+            </li>
+            <li class="contact-heading">Email:</li>
+            <li>
+              <a href="mailto:aaron.lewis1011@gmail.com"
+                >aaron.lewis1011@gmail.com</a
+              >
+            </li>
+            <li class="contact-heading">LinkedIn:</li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/aaron-lewis-27a19b160"
+                target="_blank"
+                >Aaron Lewis</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
-</body>
-<!-- <footer class="footer">&copy; Aaron Lewis 2020</footer> -->
+  </body>
+  <!-- <footer class="footer">&copy; Aaron Lewis 2020</footer> -->
 </html>
