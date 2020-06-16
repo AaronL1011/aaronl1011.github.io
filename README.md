@@ -4,7 +4,6 @@
 
 Coder Academy 2019
 
-
 ### Github
 
 [https://github.com/AaronL1011/aaronl1011.github.io](https://github.com/AaronL1011/aaronl1011.github.io)
@@ -12,13 +11,6 @@ Coder Academy 2019
 ### Website
 
 [http://aaronlewis.io](http://aaronlewis.io)
-
-See branches for alternate versions of the website.
-
-**!!!WARNING!!!**
-
-**Do not look at Anarchy website if you have a history of epilepsy or seizures, rapid flashing colors appear on this website!!!!**
-
 
 ## Purpose
 
@@ -35,7 +27,7 @@ This portfolio should be responsive and nicely formatted on all devices and incl
 
 ## Functionality and Features
 
-From the beginning of this project I have had some specific features in mind. I would like the website structure to be fairly minimalist (without compromising on styling) in order to focus the users eye to the more technical aspects (ie. how text responds to the cursor, navigation and fluidity of the website). As my career goal is to be more towards a backend developer, I want to highlight my abilities in getting technical functions and ideas to work properly. 
+From the beginning of this project I have had some specific features in mind. I would like the website structure to be fairly minimalist (without compromising on styling) in order to focus the users eye to the more technical aspects (ie. how text responds to the cursor, navigation and fluidity of the website). As my career goal is to be more towards a backend developer, I want to highlight my abilities in getting technical functions and ideas to work properly.
 
 ![Gif of Home Page Functions](docs/menulinks.gif)
 
@@ -43,8 +35,7 @@ I think a really cool idea to implement is having the ability to switch between 
 
 ![Website Themes](docs/themes.png)
 
-
-I'd also like the bulk of the website to be on one html document. A home screen, projects screen and contact information screens all nagivated by icons on the home screen (and nav menu) which when clicked or tapped, scroll to anchors throughout the page. 
+I'd also like the bulk of the website to be on one html document. A home screen, projects screen and contact information screens all nagivated by icons on the home screen (and nav menu) which when clicked or tapped, scroll to anchors throughout the page.
 
 When positioning the Navigation menu, I want to be sure to place it in a region of the screen so mobile users with large devices won't struggle to reach the buttons (which is a pressing issue in this age of large smartphones and small hands).
 
@@ -76,9 +67,9 @@ As far as design ideas, I made a mood board using Pinterest and gathered inspira
 
 ![Mood board](docs/moodboard.png)
 
-### Wireframes 
+### Wireframes
 
-In order to visualize the layout I wanted for my portfolio and blog, I used Balsamiq Wireframes and mocked up some very basic designs for both desktop and mobile. This was the basic guide I stuck to after failing the first iteration of website design. It was much easier after making the wireframes and using them as reference for the next versions. 
+In order to visualize the layout I wanted for my portfolio and blog, I used Balsamiq Wireframes and mocked up some very basic designs for both desktop and mobile. This was the basic guide I stuck to after failing the first iteration of website design. It was much easier after making the wireframes and using them as reference for the next versions.
 
 **Portfolio Page**
 ![Portfolio wireframe](docs/HomepageWireframe.png)
@@ -91,7 +82,6 @@ In order to visualize the layout I wanted for my portfolio and blog, I used Bals
 
 **Blog Contact Info**
 ![Blog Wireframe](docs/ContactWireframe.png)
-
 
 ### Color Choices
 
