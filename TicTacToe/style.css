@@ -27,9 +27,11 @@ body {
   box-shadow: 6px 6px 16px #d1cdc7, -6px -6px 16px #ffffff;
   margin: auto;
   border-spacing: 10px;
+  table-layout: fixed;
 }
 
 .board-cell {
+  padding: 0;
   background: #efeeee;
   border-radius: 20px;
   transition: 0.1s ease-in-out;
@@ -51,7 +53,7 @@ body {
 }
 
 #game-reset-button {
-  background-color: #555555; /* Green */
+  background-color: #555555;
   border: none;
   border-radius: 5px;
   color: white;
@@ -60,4 +62,11 @@ body {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  transition: 0.2s ease;
+}
+
+#game-reset-button:hover {
+  background-color: #3f3f3f;
+  transform: scale(0.95);
+  transition: 0.2s ease;
 }
