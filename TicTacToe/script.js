@@ -1,4 +1,7 @@
 const playerStatus = document.querySelector('#current-player');
+const playerXWins = document.querySelector('#player-x-wins');
+const playerOWins = document.querySelector('#player-o-wins');
+const drawWins = document.querySelector('#draw-wins');
 
 let gameActive = true;
 
@@ -82,6 +85,11 @@ function handleResultValidation() {
   }
   if (roundWon) {
     playerStatus.innerHTML = winningMessage();
+    if (currentPlayer === 'X') {
+      playerXWins.innerText++;
+    } else if (currentPlayer === 'O') {
+      playerOWins.innerText++;
+    }
     gameActive = false;
     return;
   }
@@ -89,6 +97,7 @@ function handleResultValidation() {
   let roundDraw = !gameState.includes('');
   if (roundDraw) {
     playerStatus.innerHTML = drawMessage();
+    drawWins.innerText++;
     gameActive = false;
     return;
   }
