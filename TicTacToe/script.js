@@ -3,6 +3,19 @@ const playerXWins = document.querySelector('#player-x-wins');
 const playerOWins = document.querySelector('#player-o-wins');
 const drawWins = document.querySelector('#draw-wins');
 
+let computerEnabled = false;
+function enableComputer() {
+  computerEnabled = computerEnabled === false ? true : false;
+  console.log(`Computer activated: ${computerEnabled}`);
+  if (computerEnabled) {
+    document.querySelector('#enable-computer-button').style.backgroundColor =
+      'green';
+  } else {
+    document.querySelector('#enable-computer-button').style.backgroundColor =
+      '#555555';
+  }
+}
+
 let gameActive = true;
 
 let currentPlayer = 'X';
@@ -23,13 +36,17 @@ function cellClick(clickedCellEvent) {
   const clickedCellIndex = parseInt(
     clickedCell.getAttribute('data-cell-index')
   );
-
+  console.log(clickedCellIndex);
   if (gameState[clickedCellIndex] !== '' || !gameActive) {
     return;
   }
 
   handleCellPlayed(clickedCell, clickedCellIndex);
   handleResultValidation();
+
+  if (computerEnabled === true && currentPlayer === 'O') {
+    computerOpponent();
+  }
 }
 
 function handleCellPlayed(clickedCell, clickedCellIndex) {
@@ -51,6 +68,8 @@ function resetBoard() {
   gameActive = true;
   currentPlayer = 'X';
   gameState = ['', '', '', '', '', '', '', '', ''];
+  cockBlockedConditions = [];
+  computerWinCondition = null;
   playerStatus.innerHTML = currentPlayerTurn();
   document
     .querySelectorAll('.board-cell')
@@ -117,3 +136,154 @@ document
 document
   .querySelector('#game-reset-button')
   .addEventListener('click', resetBoard);
+
+document
+  .querySelector('#enable-computer-button')
+  .addEventListener('click', enableComputer);
+
+let computerWinCondition = null;
+function computerOpponent() {
+  if (computerWinCondition === null) {
+    computerWinCondition = setComputerWinCondition(false);
+  }
+  console.log(`The current condition is ${computerWinCondition}`);
+  if (opponentAboutToWin()) {
+    computerWinCondition = setComputerWinCondition(true);
+  } else {
+    for (cell of computerWinCondition) {
+      if (gameState[cell] === 'X') {
+        computerWinCondition = setComputerWinCondition(false);
+      }
+    }
+  }
+  for (cell of computerWinCondition) {
+    if (gameState[cell] === '') {
+      eventFire(document.getElementById(cell), 'click');
+      break;
+    }
+  }
+  // Repeat until game end
+}
+
+function setComputerWinCondition(cockblock) {
+  // Initialise random winningCondition
+  if (computerWinCondition === null) {
+    selectedCondition = winningConditions[Math.floor(Math.random() * 8)];
+    // Validate all index of the winningCondition within the current GameState do not include opponents letter
+    if (
+      computerWinCondition !== selectedCondition &&
+      validateCondition(selectedCondition)
+    ) {
+      console.log(`A condition of ${selectedCondition} has been Initialised`);
+      return selectedCondition;
+    } else {
+      return setComputerWinCondition(false);
+    }
+  }
+
+  // Check if human to win next turn
+  if (cockblock) {
+    console.log('HUMAN ABOUT TO WIN! ELIMINATE!');
+    return cockBlock();
+  } else {
+    // Check if round win impossible
+    if (winPossible()) {
+      selectedCondition = winningConditions[Math.floor(Math.random() * 8)];
+      // Validate all index of the winningCondition within the current GameState do not include opponents letter
+      if (validateCondition(selectedCondition)) {
+        console.log('A new condition has been set due to an invalid condition');
+        console.log(selectedCondition);
+        return selectedCondition;
+      } else {
+        if (opponentAboutToWin()) {
+          return setComputerWinCondition(true);
+        } else {
+          console.log('X in condition, choosing new condition');
+          return setComputerWinCondition(false);
+        }
+      }
+    } else {
+      impossibleWinArray = [];
+      for (i = 0; i < gameState.length - 1; i++) {
+        if (gameState[i] === '') {
+          impossibleWinArray.push(i);
+        }
+      }
+      return impossibleWinArray;
+    }
+  }
+  // If index of condition is taken by human player, switch winningCondition to closest similar condition.
+}
+
+function eventFire(el, etype) {
+  if (el.fireEvent) {
+    el.fireEvent('on' + etype);
+  } else {
+    var evObj = document.createEvent('Events');
+    evObj.initEvent(etype, true, false);
+    el.dispatchEvent(evObj);
+  }
+}
+
+function validateCondition(conditionSet) {
+  for (index of conditionSet) {
+    if (gameState[index] === 'X') {
+      return false;
+    }
+  }
+  return true;
+}
+
+function winPossible() {
+  totalConditionsIncludingX = 0;
+  for (conditionSet of winningConditions) {
+    for (index of conditionSet) {
+      if (gameState[index] === 'X') {
+        totalConditionsIncludingX++;
+        break;
+      }
+    }
+  }
+  if (totalConditionsIncludingX === 8) {
+    return false;
+  }
+  return true;
+}
+
+let cockBlockedConditions = [];
+function cockBlock() {
+  for (condition of winningConditions) {
+    xCount = 0;
+    for (index of condition) {
+      if (gameState[index] === 'X') {
+        xCount++;
+      } else if (gameState[index] === 'O') {
+        xCount--;
+      }
+    }
+    if (xCount === 2 && !cockBlockedConditions.includes(condition)) {
+      cockBlockedConditions.push(condition);
+      return condition;
+    }
+  }
+}
+
+function opponentAboutToWin() {
+  for (condition of winningConditions) {
+    if (!cockBlockedConditions.includes(condition)) {
+      xCount = 0;
+      for (index of condition) {
+        if (gameState[index] === 'X') {
+          xCount++;
+        }
+        if (gameState[index] === 'O') {
+          xCount--;
+        }
+      }
+      if (xCount === 2) {
+        return true;
+      }
+    }
+  }
+  return false;
+}

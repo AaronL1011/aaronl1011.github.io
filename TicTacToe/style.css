@@ -52,7 +52,8 @@ body {
   margin-top: 20px;
 }
 
-#game-reset-button {
+#game-reset-button,
+#enable-computer-button {
   background-color: #555555;
   border: none;
   border-radius: 5px;
@@ -63,9 +64,11 @@ body {
   display: inline-block;
   font-size: 16px;
   transition: 0.2s ease;
+  margin: 10px;
 }
 
-#game-reset-button:hover {
+#game-reset-button:hover,
+#enable-computer-button:hover {
   background-color: #3f3f3f;
   transform: scale(0.95);
   transition: 0.2s ease;
