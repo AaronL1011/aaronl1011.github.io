@@ -139,7 +139,10 @@ document
 
 document
   .querySelector('#enable-computer-button')
-  .addEventListener('click', enableComputer);
+  .addEventListener('click', () => {
+    enableComputer();
+    resetBoard();
+  });
 
 let computerWinCondition = null;
 function computerOpponent() {
