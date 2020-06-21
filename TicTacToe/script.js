@@ -54,12 +54,12 @@ function handleCellPlayed(clickedCell, clickedCellIndex) {
   if (currentPlayer === 'X') {
     xSymbol = document.createElement('img');
     xSymbol.setAttribute('src', 'img/ex.png');
-    xSymbol.style.height = '150px';
+    xSymbol.className = 'player-symbol';
     clickedCell.appendChild(xSymbol);
   } else if (currentPlayer === 'O') {
     oSymbol = document.createElement('img');
     oSymbol.setAttribute('src', 'img/oh.png');
-    oSymbol.style.height = '150px';
+    oSymbol.className = 'player-symbol';
     clickedCell.appendChild(oSymbol);
   }
 }

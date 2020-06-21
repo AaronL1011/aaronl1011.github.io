@@ -38,6 +38,34 @@ body {
   height: 200px;
   width: 200px;
   text-align: center;
+  vertical-align: middle;
+}
+
+.player-symbol {
+  height: 150px;
+  width: 150px;
+}
+
+@media only screen and (max-width: 650px) {
+  .game-container {
+    width: 100%;
+  }
+  .game-board {
+    width: 100%;
+    height: auto;
+  }
+
+  .board-cell {
+    width: 100px;
+    height: 100px;
+  }
+
+  .player-symbol {
+    height: 70px;
+    width: 70px;
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 .board-cell:hover {
