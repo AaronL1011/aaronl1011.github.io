@@ -65,7 +65,7 @@ body {
   font-size: 60px;
   transition: transform 0.5s, text-shadow 0.5s;
 }
-.title:hover {
+.title-hover:hover {
   transform: translateY(-5px) scaleX(1.05) scaleY(1.05);
   text-shadow: 0 5px 10px var(--title-shadow);
   transition: transform 0.5s, text-shadow 0.5s;
@@ -97,7 +97,7 @@ body {
 
 .about {
   width: 100%;
-  min-height: 100vh;
+  min-height: 60vh;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -125,14 +125,38 @@ body {
 
 .about-content ul {
   list-style: none;
+  width: 30%;
+  padding: 0;
 }
 .about-content ul li {
-  padding: 5px 0 5px 0;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-content ul li i {
+  margin-right: 15px;
 }
 
 .about-section {
+  display: flex;
+  flex-direction: column;
   padding: 0 10px 0 10px;
-  width: 300px;
+  min-width: 40%;
+  align-items: center;
+}
+
+.about-list {
+  width: 70%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media screen and (max-width: 1500px) {
+  .about-list {
+    width: 100%;
+  }
 }
 
 .projects {

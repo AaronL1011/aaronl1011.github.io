@@ -9,6 +9,12 @@
     <link rel="icon" type="image/png" href="img/favicon.png" />
     <link
       rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
       type="text/css"
       href="css/styles.css"
       integrity="cSDOHWCD20rcALLQgObM7voZDP4GEkhWpvHA/E/wxhVtb82GufdozJcsBaWgO7LI7sNO8evdbjiUejsjsEfKHg=="
@@ -83,14 +89,16 @@
     <header class="home" id="homeDiv">
       <div class="title-div">
         <a href="#aboutDiv" class="scrollTo"
-          ><h1 class="title noselect" onclick="aboutMe()">aaron lewis.</h1></a
+          ><h1 class="title title-hover noselect" onclick="aboutMe()">
+            aaron lewis.
+          </h1></a
         >
       </div>
       <div class="links">
         <div class="tooltip">
           <a href="https://github.com/aaronl1011" target="_blank"
             ><img
-              class="link-img tooltip"
+              class="link-img tooltip noselect"
               src="./img/github.png"
               alt="github link"
               draggable="false"
@@ -104,7 +112,7 @@
         <div class="tooltip">
           <a href="#projectDiv" class="scrollTo tooltip"
             ><img
-              class="link-img"
+              class="link-img noselect"
               src="./img/projects.png"
               alt="projects section link"
               draggable="false"
@@ -120,7 +128,7 @@
             target="_blank"
             class="tooltip"
             ><img
-              class="link-img"
+              class="link-img noselect"
               src="./img/linkedin.png"
               alt="blog link"
               draggable="false"
@@ -133,7 +141,7 @@
         <div class="tooltip">
           <a href="#contactDiv" class="scrollTo tooltip"
             ><img
-              class="link-img"
+              class="link-img noselect"
               src="./img/contact.png"
               alt="contact section link"
               draggable="false"
@@ -154,37 +162,51 @@
           <h2>Muso | Foodie | Gamer | Coder</h2>
         </div>
         <div class="about-content">
-          <section class="about-section">
+          <div class="about-section">
             <h3>Technical Skills</h3>
-            <ul>
-              <li>Python</li>
-              <li>Ruby</li>
-              <li>C++</li>
-              <li>HTML5</li>
-              <li>CSS3</li>
-              <li>Javascript</li>
-              <li>React</li>
-              <li>Express</li>
-              <li>Node JS</li>
-              <li>MongoDB</li>
-              <li>Wireframing</li>
-              <li>Testing</li>
-            </ul>
-          </section>
-          <section class="about-section">
+            <div class="about-list">
+              <ul>
+                <li><i class="fab fa-python fa-2x"></i> Python</li>
+                <li><i class="far fa-gem fa-2x"></i> Ruby</li>
+                <li><i class="fas fa-plus fa-2x"></i> C++</li>
+                <li><i class="fab fa-html5 fa-2x"></i> HTML5</li>
+                <li><i class="fab fa-css3 fa-2x"></i> CSS3</li>
+                <li><i class="fab fa-js fa-2x"></i> Javascript</li>
+              </ul>
+              <ul>
+                <li><i class="fab fa-react fa-2x"></i> React</li>
+                <li><i class="fab fa-js fa-2x"></i> Express</li>
+                <li><i class="fab fa-node-js fa-2x"></i> Node JS</li>
+                <li><i class="fas fa-database fa-2x"></i> MongoDB</li>
+                <li><i class="far fa-window-restore fa-2x"></i> Wireframing</li>
+                <li><i class="fas fa-vial fa-2x"></i> Testing</li>
+              </ul>
+            </div>
+          </div>
+          <div class="about-section">
             <h3>Hobbies and Interests</h3>
-            <ul>
-              <li>Collecting Vinyls</li>
-              <li>Playing Drums</li>
-              <li>Cooking</li>
-              <li>Fixing Cars</li>
-              <li>Coding</li>
-              <li>Space / Stargazing</li>
-              <li>Motorcycles</li>
-              <li>Video Games</li>
-              <li>Looking at cats on Reddit</li>
-            </ul>
-          </section>
+            <div class="about-list">
+              <ul>
+                <li>
+                  <i class="fas fa-compact-disc fa-2x"></i> Collecting Vinyls
+                </li>
+                <li><i class="fas fa-drum fa-2x"></i> Playing Drums</li>
+                <li><i class="fas fa-cookie-bite fa-2x"></i> Cooking</li>
+                <li><i class="fas fa-wrench fa-2x"></i> Fixing Cars</li>
+                <li><i class="fas fa-code fa-2x"></i> Coding</li>
+              </ul>
+              <ul>
+                <li>
+                  <i class="fas fa-satellite fa-2x"></i> Space / Stargazing
+                </li>
+                <li><i class="fas fa-motorcycle fa-2x"></i> Motorcycles</li>
+                <li><i class="fas fa-gamepad fa-2x"></i> Video Games</li>
+                <li>
+                  <i class="fas fa-paw fa-2x"></i> Looking at animals on Reddit
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
       <section class="projects" id="projectDiv">
